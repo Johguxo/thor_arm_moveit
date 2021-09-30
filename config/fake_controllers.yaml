@@ -1,0 +1,13 @@
+controller_list:
+  - name: fake_thor_arm_controller
+    type: $(arg execution_type)
+    joints:
+      - art1_yaw
+      - art2_pitch
+      - art3_pitch
+      - art4_roll
+      - art5_pitch
+      - art6_roll
+initial:  # Define initial robot poses.
+  - group: thor_arm
+    pose: home
